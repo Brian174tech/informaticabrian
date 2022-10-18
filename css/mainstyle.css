@@ -1,0 +1,112 @@
+body{
+    color: #ffffff;
+    margin:0;
+    width: auto;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+}
+p{
+    color:var(--black);
+}
+/* Logo segment +++++++++++++++++++++++++++++ begin*/
+.logomain {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+.logomain span {
+    color: var(--primary);
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+}
+.logomain img{
+    opacity: 0.75;
+    transition: rotate 2s ease-in-out;
+}
+.logomain:hover img{
+    rotate: -240deg;
+}
+#mainlogo {
+    height: 150px;
+    width: 150px;
+    margin: 24px auto;
+}
+/* Logo segment +++++++++++++++++++++++++++++ end */
+/* navigation segment +++++++++++++++++++++ begin */
+.navbar{
+    background-color: var(--primary);
+    width: 100%;
+    top:0;
+    padding: 20px 0px;
+}
+.navflex{
+    display:flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    min-width: 360px;
+    padding: 0px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navflex ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.navflex li{
+    float:left;
+}
+.navflex li a{
+    margin-right: 10px;
+}
+#currentpage{
+    color:var(--yellow700);
+    margin-left: 10px;
+}
+.menuitems li{
+    margin:0;
+    padding: 0;
+}
+.menuitems a,.breadcrumb a{
+    color: white;
+    text-decoration: none;
+}
+.menuitems a:hover,.breadcrumb a:hover,.menuicon:hover{
+    background-color: var(--complementary);
+}
+.menuicon{
+    display:none;
+}
+#iconmenu{
+    width: 20px;
+}
+
+/* navigation segment ++++++++++++++++++++++ end */
+.contentmain{
+    display: flex;
+    max-width: 1200px;
+    min-width: 360px;
+    margin:0;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+/* mediaquery segment ++++++++++++++++++++ begin */
+@media only screen and (max-width: 600px) {
+    #mainlogo {
+      width: 75px;
+      height: 75px;
+      margin: 12px auto;
+    }
+    #menuicon{
+        display:flex;
+    }
+    #menuitems{
+        display:none;
+    }
+}  
