@@ -10,6 +10,9 @@ body{
 p{
     color:var(--black);
 }
+h3{
+    color:var(--black);
+}
 /* Logo segment +++++++++++++++++++++++++++++ begin*/
 .logomain {
     display: flex;
@@ -95,6 +98,22 @@ p{
     margin: 0 auto;
     padding: 0px 10px;
 }
+.contentproject{
+    background-color: var(--jungle50);
+    border-radius: 25px;
+    /*overlay color*/
+    float: left;
+    width: 28%;
+    min-width: 320px;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--complementary);
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin: 1% auto;
+}
+
 
 /* mediaquery segment ++++++++++++++++++++ begin */
 @media only screen and (max-width: 600px) {
