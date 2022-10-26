@@ -1,5 +1,5 @@
 body{
-    color: #ffffff;
+    color: var(--white);
     margin:0;
     width: auto;
     padding: 0;
@@ -76,7 +76,7 @@ h3{
     padding: 0;
 }
 .menuitems a,.breadcrumb a{
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 .menuitems a:hover,.breadcrumb a:hover,.menuicon:hover{
@@ -88,14 +88,13 @@ h3{
 #iconmenu{
     width: 20px;
 }
-
 /* navigation segment ++++++++++++++++++++++ end */
 .contentmain{
     display: flex;
     max-width: 1200px;
-    min-width: 360px;
+    min-width: 380px;
     margin:0;
-    margin: 0 auto;
+    margin: 1% auto;
     padding: 0px 10px;
 }
 .contentproject{
@@ -104,17 +103,18 @@ h3{
     /*overlay color*/
     float: left;
     width: 28%;
-    min-width: 320px;
+    min-width: 179px;
     border: 5px;
     border-style: solid;
     border-color: var(--complementary);
     text-align: center;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    margin: 1% auto;
+    margin: 0 auto;
 }
-
-
+.contentproject img{
+    margin:0 -1px;
+}
 /* mediaquery segment ++++++++++++++++++++ begin */
 @media only screen and (max-width: 600px) {
     #mainlogo {
@@ -125,7 +125,9 @@ h3{
     #menuicon{
         display:flex;
     }
-    #menuitems{
-        display:none;
+    #menuitems.responsive {
+        display: block;
+        width: 100%;{
     }
+
 }  
