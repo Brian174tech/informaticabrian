@@ -1,7 +1,7 @@
 body{
     color: var(--white);
-    margin:0;
     width: auto;
+    margin:0;
     padding: 0;
     max-width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,9 +10,44 @@ body{
 p{
     color:var(--black);
 }
+pre{
+    color:var(--black);
+    margin:1em;
+    padding: 0;
+    line-height: 1;
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 h3{
     color:var(--black);
 }
+h4{
+    color:var(--black);
+    border-style:double;
+    margin:0;
+    padding: 0;
+}
+h5{
+    color:var(--black);
+    margin:0;
+    padding: 0;
+    line-height: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    border: solid;
+    margin:1em
+  }
+  table th{
+    border: solid;
+    font-size: 0.8em;
+  }
+  table td{
+    border: 1px solid;
+    font-size: 0.8em;
+  }
 /* Logo segment +++++++++++++++++++++++++++++ begin*/
 .logomain {
     display: flex;
@@ -115,6 +150,16 @@ h3{
 .contentproject img{
     margin:0 -1px;
 }
+.contentassessment{
+    color: var(--black);
+}
+.contentassessment ul{
+    font-size: 0.8em;
+}
+.contentassessment p{
+    font-size: 0.8em;
+    line-height: 1;
+}
 /* mediaquery segment ++++++++++++++++++++ begin */
 @media only screen and (max-width: 600px) {
     #mainlogo {
@@ -125,9 +170,11 @@ h3{
     #menuicon{
         display:flex;
     }
-    #menuitems.responsive {
-        display: block;
+    #menuitems{
+        display: none;
         width: 100%;{
     }
-
 }  
+
+.showclick
+
