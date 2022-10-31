@@ -6,6 +6,7 @@ b += 5;
 b -= c;
 b *= 3;
 b /= 11;
+console.log(b)
 
 var myString = " ik zei:\"dat ik zei:\"dat dit my string is\"\"";
 var mijnString = '\n ik zei:"dat ik zei:"dat dit mijn string is""';
@@ -55,5 +56,12 @@ function woordSpel(jeNaam, eenCijfer, eenEigenschap, eenSnack, eenVervoersmiddel
 console.log(woordSpel("Brian", "10", "slim", "tosti", "auto"));
 
 function navmenu(){
-    
+    x = document.getElementById("menuitems");
+    console.log(x);
+    if (x.style.display === "none"){
+        x.style.display = "flex";
+        // x.style.flexdirection = "column";
+    }else{
+        x.style.display = "none";
+    }
 }
