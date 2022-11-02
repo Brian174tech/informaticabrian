@@ -107,8 +107,7 @@ table {
     margin-left: 10px;
 }
 .menuitems{
-    display: none;
-    
+    display: flex;
 }
 .menuitems li{
     margin:0;
