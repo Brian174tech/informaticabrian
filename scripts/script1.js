@@ -2,7 +2,6 @@ var numberOfClicks = 0;
 var powerOfClicks = 1;
 var upgradeLevel = 0;
 
-
 function countfunction(){
     numberOfClicks = numberOfClicks + powerOfClicks;
     document.getElementById("countresult").innerHTML = numberOfClicks;
