@@ -35,7 +35,7 @@ function powerupfunction(){
         powerOfClicks += 15;
         document.getElementById("countresult").innerHTML = numberOfClicks;
         document.getElementById("powerclick").innerHTML = powerOfClicks;
-        document.getElementById("statusmessage").innerHTML = "You bought 5power for 1000 points";
+        document.getElementById("statusmessage").innerHTML = "You bought 15power for 1000 points";
     }
     else if (numberOfClicks >= 100){
         numberOfClicks =  numberOfClicks - 100;
