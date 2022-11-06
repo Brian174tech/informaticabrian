@@ -7,7 +7,7 @@ function countfunction(){
     numberOfClicks = numberOfClicks + powerOfClicks;
     document.getElementById("countresult").innerHTML = numberOfClicks;
     document.getElementById("powerclick").innerHTML = powerOfClicks;
-    if (numberOfClicks > 10000){
+    if (numberOfClicks > 1000000){
         document.getElementById("statusmessage").innerHTML = "You Won The Game";
     } else{
         document.getElementById("statusmessage").innerHTML = " ";
@@ -20,9 +20,16 @@ function resetcountfunction(){
     document.getElementById("powerclick").innerHTML = powerOfClicks;
 }
 function powerupfunction(){
-    if (numberOfClicks >= 10000){
+    if (numberOfClicks >= 1000000){
         document.getElementById("statusmessage").innerHTML = "You already Won The Game";
     } 
+    else if (numberOfClicks >= 10000){
+        numberOfClicks =  numberOfClicks - 10000;
+        powerOfClicks += 200;
+        document.getElementById("countresult").innerHTML = numberOfClicks;
+        document.getElementById("powerclick").innerHTML = powerOfClicks;
+        document.getElementById("statusmessage").innerHTML = "You bought 5power for 1000 points";
+    }
     else if (numberOfClicks >= 1000){
         numberOfClicks =  numberOfClicks - 1000;
         powerOfClicks += 15;
