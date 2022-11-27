@@ -139,6 +139,34 @@ table {
     color: var(--black);
 }
 
+.dropdown-content2{
+    position: absolute;
+    display:none;
+    margin: 0;
+    padding: 12px 0px;
+    background-color: var(--complementary);
+}
+.dropdown-content{
+    position: absolute;
+    display:none;
+    margin: 0;
+    padding: 10px 0px;
+    background-color: var(--complementary);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropdown-content2{
+    display: block;
+    margin-top: 36px;
+}
+
+.dropdown-content:hover{
+    color: var(--yellow700);
+}
+.dropdown-content2:hover{
+    color: var(--yellow700);
+}
 
 .contentproject{
     background-color: var(--jungle50);
