@@ -1,34 +1,51 @@
 <?php
 
+        
 
-    class Model{
-            foreach ($fakeSQL as $key => $value) {
-                if (property_exists($this, $key)) {
-                    $this->$key = $value;
-                }
-            }
+    class ObjectO{
+        public $objectId;
+        public $objectColor;
+        public $objectName;
+        
+        
+        function setObjectName($objectName){
+            $this->objectName = $objectName;
         }
-    
-    public $objectName = null;
-    public $objectId = null;
-    public $objectColor = null;
-
-    class Object extends Model{
-
-
         function getObjectName()
         {
             return $this->objectName;
         }
 
+        function setObjectId($objectId){
+            $this->objectId = $objectId;
+        }
         function getObjectId()
         {
             return $this->objectId;
         }
 
+        function setObjectColor($objectColor){
+            $this->objectColor = $objectColor;
+        }
         function getObjectColor()
         {
             return $this->objectColor;
         }
+
     }
+
+    class ObjectList{
+        public $objectList;
+
+        function setObjectList($objectList){
+            $this->objectList = $objectList;
+        }
+        function getObjectList()
+        {
+            return $this->objectList;
+        }
+    }
+
+    
+
 ?>

@@ -50,15 +50,17 @@ require_once 'objectcontroller.php';
 
             <h5>MVC poc: get_objects</h5> <br>
             <form method="post" action="">
-            Get list with objects <input type="submit" name="getList">
+            Get list with objects <input type="submit" name="getList"><br>
+            <?php echo $messageList; ?> <br>
 
-            <br><br><br><br>
+            <br><br>
             <h5>MVC poc: get_object#</h5> <br>
             <form method="post" action="">
             <table> 
                 <tr> <td>Get object with nr.:</td><td><input type="text" name="number"></td></tr>
             </table>
-            <input type="submit" name="getNumber">
+            <input type="submit" name="getNumber"><br>
+            <?php echo $messageNumber; ?> <br>
 
     </main>
     <script rel="javascript" src="../scripts/script.js"></script>
