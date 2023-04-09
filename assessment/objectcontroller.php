@@ -38,12 +38,12 @@ require_once 'objectmodel.php';
 
     if(isset($_POST['getNumber'])){
         $number = $_POST['number'];
-        if($number <= 3 ){
-            if ($number == "1" ){
+        if($number <= 3 && (int)$number <= 3){
+            if ((int)$number == "1" ){
                 $objectChosen = $objectListA[0];
-            }elseif  ($number == "2" ){ 
+            }elseif  ((int)$number == "2" ){ 
                 $objectChosen = $objectListA[1];
-            }elseif  ($number == "3" ){
+            }elseif  ((int)$number == "3" ){
                 $objectChosen = $objectListA[2];
             }
             $objectNumber = new ObjectO();
