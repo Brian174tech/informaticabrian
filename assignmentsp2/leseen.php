@@ -97,7 +97,7 @@
         substr("Willy Wonka", 4); <br>
         result: <?php echo substr("Hello world",2); ?> <br>
         is_numeric(32); is_numeric(true); <br>
-        result: <?php is_numeric(32); is_numeric(true); ?> <br>
+        result: <?php echo is_numeric(32); echo is_numeric(true); ?> <br>
         if (isset(null)); if (isset(4)); <br>
         result: <?php $a = null; if (isset($a)) { echo "Variable 1# is set.<br>";} else{ echo "Variable 1# is NOT set.<br>";}?>
         result: <?php $b = 4; if (isset($b)) { echo "Variable 2# is set.<br>";} else{ echo "Variable 2# is NOT set.<br>";}?>
