@@ -32,7 +32,9 @@
     </nav>
     <main class= "contentmain">
         <section class="contentassessment">
-         <h5>Sample 1:</h5><br>
+            <h3>Assignment P4 - PHP</h3>
+            <h4>Les 1</h4>
+            <h5>Sample 1:</h5>
         <pre>
     &lt;?php
         for ( $i = 1; $i <= 10; $i++) {
@@ -48,8 +50,8 @@
                     }
                 ?>
 
-        </p>
-        <h5> Sample 2:</h5><br>
+        </p><br>
+        <h5>Sample 2:</h5><br>
         <p>
             <?php
                         echo "hello" ;
