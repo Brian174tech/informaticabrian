@@ -92,6 +92,18 @@
             ?>
 
         </p><br>
+        <h5>Sample 4: functies </h5>
+        <p>
+        substr()
+        is_numeric()
+        isset()
+        echo()
+        mail()
+        print_r()
+        
+        
+        </p><br>
+
         </section>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
