@@ -31,13 +31,19 @@
       </nav>
     </nav>
     <main class= "contentmain">
-      <p>
+      <p> Sample 1:
         <pre>
 &lt;?php
-        // PHP code goes here
-    ?&gt;
+    for ( $i = 1; $i <= 10; $i++) {
+        echo $i ;
+    }
+?&gt;
         </pre>
-
+        <?php
+            for ( $i = 1; $i <= 10; $i++) {
+                echo $i ;
+            }
+        ?>
       </p>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
