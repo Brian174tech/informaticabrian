@@ -78,17 +78,17 @@
         do {
             echo $i ;
             $i++;
-        } while ( $i < 10 ); 
+        } while ( $i <= 10 ); 
     ?&gt;
         </pre>
         <p>
             Result: 
             <?php
-                $i = 0; 
+                $i = 1; 
                 do {
                     echo $i ;
                     $i++;
-                } while ( $i < 10 ); 
+                } while ( $i <= 10 ); 
             ?>
 
         </p><br>
