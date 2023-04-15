@@ -50,7 +50,7 @@
                 ?>
 
         </p><br>
-        <h5>Sample 2: while loop</h5><br>
+        <h5>Sample 2: while loop</h5>
         <pre>
     &lt;?php
         $i = 1; 
@@ -71,7 +71,7 @@
             ?>
 
         </p><br>
-        <h5>Sample 3: do while </h5><br>
+        <h5>Sample 3: do while </h5>
         <pre>
     &lt;?php
         $i = 0; 
