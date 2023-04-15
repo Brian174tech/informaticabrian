@@ -32,21 +32,20 @@
     </nav>
     <main class= "contentmain">
         <section class="contentassessment">
-        <p> Sample 1:<br><br>
-            <?php
-                    for ( $i = 1; $i <= 10; $i++) {
-                        echo $i ;
-                    }
-                ?>
-        </p>
-        <p>
-            <pre>
+        <p> Sample 1:<br>
+        <pre>
     &lt;?php
         for ( $i = 1; $i <= 10; $i++) {
             echo $i ;
         }
     ?&gt;
-            </pre>
+        </pre><br>
+            <?php
+                    for ( $i = 1; $i <= 10; $i++) {
+                        echo $i ;
+                    }
+                ?>
+
         </p>
         <p> Sample 2:<br><br>
             <?php
