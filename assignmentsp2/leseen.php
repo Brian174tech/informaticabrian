@@ -105,6 +105,10 @@
         result: Check your email inbox.
         </p><br>
 
+        <h5>Sample 5: afkortingen, structuur, js en datatypen </h5>
+        <p>
+        <a href="../assessment/assessmentp2.php">Zie: Assessment-P2</a>
+
         </section>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
