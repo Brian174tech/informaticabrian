@@ -32,6 +32,13 @@
     </nav>
     <main class= "contentmain">
       <p> Sample 1:<br><br>
+        <?php
+                for ( $i = 1; $i <= 10; $i++) {
+                    echo $i ;
+                }
+            ?>
+      </p>
+    <p>
         <pre>
 &lt;?php
     for ( $i = 1; $i <= 10; $i++) {
@@ -39,12 +46,7 @@
     }
 ?&gt;
         </pre>
-        <?php
-            for ( $i = 1; $i <= 10; $i++) {
-                echo $i ;
-            }
-        ?>
-      </p>
+    </p>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
 </body>
