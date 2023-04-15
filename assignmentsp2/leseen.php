@@ -20,10 +20,10 @@
         </ul>
         <nav class="navbutton">
           <ul id="menuitems" class="menuitems">
-            <li class="dropdown"><a>Assignments</a><a class="dropdown-content" href="old" target="_blank"> Assignments-P1</a><a class="dropdown-content2" href="assignmentsp2">Assignments-P2</a></li>
-            <li class="dropdown"><a>Assessments</a><a class="dropdown-content" href="assessment">Assessment-P1</a><a class="dropdown-content2" href="assessment/assessmentp2.php">Assessment-P2</a></li>
-            <li><a href="experiments">Experiments</a></li>
-            <li><a href="projects">Projects</a></li>
+            <li class="dropdown"><a>Assignments</a><a class="dropdown-content" href="../old" target="_blank"> Assignments-P1</a><a class="dropdown-content2" href="assignmentsp2">Assignments-P2</a></li>
+            <li class="dropdown"><a>Assessments</a><a class="dropdown-content" href="../assessment">Assessment-P1</a><a class="dropdown-content2" href="../assessment/assessmentp2.php">Assessment-P2</a></li>
+            <li><a href="../experiments">Experiments</a></li>
+            <li><a href="../projects">Projects</a></li>
           </ul>
         </nav>
       </nav>
