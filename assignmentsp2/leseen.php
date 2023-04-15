@@ -32,7 +32,7 @@
     </nav>
     <main class= "contentmain">
         <section class="contentassessment">
-        <p> Sample 1:<br>
+         <h5>Sample 1:</h5><br>
         <pre>
     &lt;?php
         for ( $i = 1; $i <= 10; $i++) {
@@ -40,6 +40,8 @@
         }
     ?&gt;
         </pre>
+        <p>
+            Result: 
             <?php
                     for ( $i = 1; $i <= 10; $i++) {
                         echo $i ;
@@ -47,7 +49,8 @@
                 ?>
 
         </p>
-        <p> Sample 2:<br><br>
+        <h5> Sample 2:</h5><br>
+        <p>
             <?php
                         echo "hello" ;
                 ?>
