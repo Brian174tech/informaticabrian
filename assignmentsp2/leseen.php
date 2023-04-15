@@ -18,7 +18,7 @@
         <ul class=breadcrumb>
             <li><a href="../index.html">Home</a></li>
           <li>/</a></li>
-          <li id="currentpage">Assignments-P2/les1</li>
+          <li id="currentpage">Assignments-P2 - Les 1</li>
         </ul>
         <nav class="navbutton">
           <ul id="menuitems" class="menuitems">
@@ -32,7 +32,12 @@
     </nav>
     <main class= "contentmain">
       <p>
-        assignment text
+        <pre>
+&lt;?php
+        // PHP code goes here
+    ?&gt;
+        </pre>
+
       </p>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
