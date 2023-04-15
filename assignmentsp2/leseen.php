@@ -51,11 +51,26 @@
 
         </p><br>
         <h5>Sample 2:</h5><br>
+        <pre>
+    &lt;?php
+        $i = 1; 
+        while ( $i <= 10 ) {
+            echo $i ;
+            $i++ ;
+        }
+    ?&gt;
+        </pre>
         <p>
+            Result: 
             <?php
-                        echo "hello" ;
-                ?>
-        </p>
+                $i = 1; 
+                while ( $i <= 10 ) {
+                    echo $i ;
+                    $i++ ;
+                }
+            ?>
+
+        </p><br>
         </section>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
