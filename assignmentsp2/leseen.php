@@ -47,6 +47,11 @@
 ?&gt;
         </pre>
     </p>
+    <p> Sample 2:<br><br>
+        <?php
+                    echo "hello" ;
+            ?>
+      </p>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
 </body>
