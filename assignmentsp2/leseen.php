@@ -31,27 +31,29 @@
       </nav>
     </nav>
     <main class= "contentmain">
-      <p> Sample 1:<br><br>
-        <?php
-                for ( $i = 1; $i <= 10; $i++) {
-                    echo $i ;
-                }
-            ?>
-      </p>
-    <p>
-        <pre>
-&lt;?php
-    for ( $i = 1; $i <= 10; $i++) {
-        echo $i ;
-    }
-?&gt;
-        </pre>
-    </p>
-    <p> Sample 2:<br><br>
-        <?php
-                    echo "hello" ;
-            ?>
-      </p>
+        <section class="contentassessment">
+        <p> Sample 1:<br><br>
+            <?php
+                    for ( $i = 1; $i <= 10; $i++) {
+                        echo $i ;
+                    }
+                ?>
+        </p>
+        <p>
+            <pre>
+    &lt;?php
+        for ( $i = 1; $i <= 10; $i++) {
+            echo $i ;
+        }
+    ?&gt;
+            </pre>
+        </p>
+        <p> Sample 2:<br><br>
+            <?php
+                        echo "hello" ;
+                ?>
+        </p>
+        </section>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
 </body>
