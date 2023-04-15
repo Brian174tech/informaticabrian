@@ -31,7 +31,7 @@
       </nav>
     </nav>
     <main class= "contentmain">
-      <p> Sample 1:
+      <p> Sample 1:<br><br>
         <pre>
 &lt;?php
     for ( $i = 1; $i <= 10; $i++) {
