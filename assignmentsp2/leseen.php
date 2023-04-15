@@ -94,14 +94,14 @@
         </p><br>
         <h5>Sample 4: functies </h5>
         <p>
-        substr()
+        substr("Willy Wonka", 4);<?php echo substr("Hello world",2); ?> | 
         is_numeric()
         isset()
         echo()
         mail()
         print_r()
         
-        
+
         </p><br>
 
         </section>
