@@ -33,7 +33,7 @@
     <main class= "contentmain">
         <section class="contentassessment">
             <h4>Assignment P4 - Les 1</h4><br>
-            <h5>Sample 1:</h5>
+            <h5>Sample 1: for loop</h5>
         <pre>
     &lt;?php
         for ( $i = 1; $i <= 10; $i++) {
@@ -50,7 +50,7 @@
                 ?>
 
         </p><br>
-        <h5>Sample 2:</h5><br>
+        <h5>Sample 2: while loop</h5><br>
         <pre>
     &lt;?php
         $i = 1; 
@@ -68,6 +68,27 @@
                     echo $i ;
                     $i++ ;
                 }
+            ?>
+
+        </p><br>
+        <h5>Sample 3: do while </h5><br>
+        <pre>
+    &lt;?php
+        $i = 0; 
+        do {
+            echo $i ;
+            $i++;
+        } while ( $i < 10 ); 
+    ?&gt;
+        </pre>
+        <p>
+            Result: 
+            <?php
+                $i = 0; 
+                do {
+                    echo $i ;
+                    $i++;
+                } while ( $i < 10 ); 
             ?>
 
         </p><br>
