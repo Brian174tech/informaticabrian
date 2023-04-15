@@ -39,13 +39,13 @@
             ?>
       </p>
     <p>
-        <pre>
+
 &lt;?php
     for ( $i = 1; $i <= 10; $i++) {
         echo $i ;
     }
 ?&gt;
-        </pre>
+
     </p>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
