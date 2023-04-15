@@ -19,6 +19,7 @@
             <li><a href="../index.html">Home</a></li>
           <li>/</a></li>
           <li id="currentpage">Assignments-P2/les1</li>
+        </ul>
         <nav class="navbutton">
           <ul id="menuitems" class="menuitems">
             <li class="dropdown"><a>Assignments</a><a class="dropdown-content" href="../old" target="_blank"> Assignments-P1</a><a class="dropdown-content2" href="../assignmentsp2">Assignments-P2</a></li>
