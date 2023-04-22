@@ -36,6 +36,14 @@
     <section class="contentassessment">
       <h4>Assignment P4 - Les 2</h4><br>
       <?php
+      $date = date('d-m-Y H:i');
+      $dow = date ('l');
+      echo "$dow<br>";
+      echo $date; 
+      
+      ?>
+
+      <?php
       define('DB_HOST', 'localhost');
       define('DB_NAME', 'schoolopdracht');
       define('DB_USER', 'bri_sg');
