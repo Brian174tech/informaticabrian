@@ -33,54 +33,43 @@
     <main class= "contentmain">
         <section class="contentassessment">
             <h4>Assignment P4 - Les 2</h4><br>
-            
-
             <?php
-            echo "<table style='border: solid 1px black;'>";
-            echo "<tr><th>Score</th><th>UserName</th><th>GameDate</th></tr>";
-          
-            class TableRows extends RecursiveIteratorIterator {
-                function __construct($it) {
-                    parent::__construct($it, self::LEAVES_ONLY);
-                }
+define ( 'DB_HOST' , 'localhost' );
+define ( 'DB_NAME' , 'schoolopdracht' );
+define ( 'DB_USER' , 'bri_sg' );
+define ( 'DB_PASS' , '28172817' );
 
-                function current() {
-                    return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
-                }
+function connectDatabase(){
+    $conn = 'mysql:host=' . DB_HOST . ';DB_NAME=' . DB_NAME;
 
-                function beginChildren() {
-                    echo "<tr>";
-                }
+    try{
+        return new PDO($conn, DB_USER, DB_PASS );
+    }
+    catch (PDOException $e) {
+        return NULL;
+    }
+}
 
-                function endChildren() {
-                    echo "</tr>" . "\n";
-                }
-            }
+$db = connectDatabase();
+if( is_null ( $db ) )
+    die('<h1>Database-verbinding mislukt</h1>' );
+echo 'gelukt';
 
-            $servername = "localhost";
-            $username = "bri_sg";
-            $password = "28172817";
-            $dbname = "highscore";
+$sql = 'SELECT * FROM schoolopdracht.gebruikers';
 
-            try {
-                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT `Score`,`UserName`,`GameDate` FROM `Score` ORDER BY `Score` DESC");
-                $stmt->execute();
+$statement = $db->prepare( $sql );
+$statement->execute();
+$result = $statement->fetchall ( PDO::FETCH_OBJ );
 
-                // set the resulting array to associative
-                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+foreach ( $result as $record ){
+    echo '<ul>';
 
-                foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-                    echo $v;
-                }
-            }
-            catch(PDOException $e) {
-                echo "Error: " . $e->getMessage();
-            }
-            $conn = null;
-            echo "</table>";
-          ?>
+    foreach ( $record  as $key => $value ) {
+        echo "<li>$key => $value</li>";
+    }
+    echo '</ul>'
+}
+?>
 
         </section>
     </main>
