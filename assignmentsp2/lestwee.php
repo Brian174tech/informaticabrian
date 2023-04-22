@@ -35,6 +35,53 @@
             <h4>Assignment P4 - Les 2</h4><br>
             
 
+            <?php
+            echo "<table style='border: solid 1px black;'>";
+            echo "<tr><th>Score</th><th>UserName</th><th>GameDate</th></tr>";
+          
+            class TableRows extends RecursiveIteratorIterator {
+                function __construct($it) {
+                    parent::__construct($it, self::LEAVES_ONLY);
+                }
+
+                function current() {
+                    return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
+                }
+
+                function beginChildren() {
+                    echo "<tr>";
+                }
+
+                function endChildren() {
+                    echo "</tr>" . "\n";
+                }
+            }
+
+            $servername = "localhost";
+            $username = "bri_sg";
+            $password = "28172817";
+            $dbname = "highscore";
+
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $stmt = $conn->prepare("SELECT `Score`,`UserName`,`GameDate` FROM `Score` ORDER BY `Score` DESC");
+                $stmt->execute();
+
+                // set the resulting array to associative
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+                foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+                    echo $v;
+                }
+            }
+            catch(PDOException $e) {
+                echo "Error: " . $e->getMessage();
+            }
+            $conn = null;
+            echo "</table>";
+          ?>
+
         </section>
     </main>
     <script rel="javascript" src="scripts/script.js"></script>
