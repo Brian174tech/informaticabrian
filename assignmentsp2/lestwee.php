@@ -40,6 +40,9 @@
     {
       $filename = "teller.txt";
       if (file_exists($filename)) {
+        rewind($handle);
+        fwrite($handle, $teller);
+        fclose($handle);
         $handle = fopen($filename, "rb+");
         $teller = fread($handle, filesize($filename));
         $teller++;
@@ -47,13 +50,10 @@
         $handle = fopen($filename, "wb+");
         $teller = 1;
       }
-      rewind($handle);
-      fwrite($handle, $teller);
-      fclose($handle);
       return sprintf("%06d", $teller);
     }
-    $teller = teller();
-    echo "$teller hallo";
+    $teller2 = teller();
+    echo "$teller2 hallo";
     ?>
 
     <?php
