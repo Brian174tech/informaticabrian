@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Computer Science Brian</title>
-  <meta name="keywords" content="Brian is a Software engineer in the making and this is his personal website" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="../css/mainstyle.css" type="text/css" rel="stylesheet" />
-  <link href="../css/color.css" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="logomain">
-    <img id="mainlogo" alt="logo" src="../images/mainlogo1.svg" />
-    <span>Brian</span>
-  </header>
+<?php require_once '../default/header.php';?>
   <nav class="navbar">
     <nav class="navflex">
       <ul class=breadcrumb>
@@ -49,7 +33,6 @@
       setlocale(LC_TIME, 'nl_NL');
       showTime();
       ?>
-
 
       <?php
       define('DB_HOST', 'localhost');
@@ -89,9 +72,9 @@
       }
       ?>
 
+      <?php
+
+      ?>
     </section>
   </main>
-  <script rel="javascript" src="scripts/script.js"></script>
-</body>
-
-</html>
+  <?php require_once '../default/footer.html';?>
