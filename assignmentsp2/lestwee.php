@@ -57,7 +57,7 @@
     $filename = 'teller.txt';
     $string = 'opdracht';
     fopen($filename, "w+");
-    fwrite($filename,$string);
+    echo fwrite($filename,$string);
     fclose($filename);
     readfile($filename);
     ?>
