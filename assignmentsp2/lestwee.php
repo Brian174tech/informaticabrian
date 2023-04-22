@@ -41,6 +41,11 @@
       echo "<p> $dow<br>";
       echo "$date</p>"; 
 
+      setlocale(LC_TIME, 'nl_NL');
+      $date = date('d-m-Y H:i');
+      $dow = date ('l');
+      echo "<p> $dow<br>";
+      echo "$date</p>"; 
       ?>
 
 
@@ -64,7 +69,7 @@
       $db = connectDatabase();
       if (is_null($db))
         die('<h1>Database-verbinding mislukt</h1>');
-      echo 'gelukt';
+      echo 'verbinding: gelukt';
 
       $sql = 'SELECT * FROM schoolopdracht.gebruikers';
 
