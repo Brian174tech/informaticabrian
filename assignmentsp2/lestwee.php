@@ -59,7 +59,7 @@
     file_put_contents($filename, $string);
     readfile($filename);
     ?>
-
+<br>
     <?php
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'schoolopdracht');
