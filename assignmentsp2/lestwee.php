@@ -36,6 +36,7 @@
     ?>
 
     <?php
+    error_reporting(E_ALL);
     // function teller()
     // {
     //   $filename = "teller.txt";
