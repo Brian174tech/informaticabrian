@@ -38,9 +38,9 @@
       <?php
       $date = date('d-m-Y H:i');
       $dow = date ('l');
-      echo "$dow<br>";
-      echo $date; 
-      
+      echo "<p> $dow<br>";
+      echo "$date</p>"; 
+
       ?>
 
       <?php
