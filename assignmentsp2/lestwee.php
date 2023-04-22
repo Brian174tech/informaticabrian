@@ -43,7 +43,6 @@
 
       ?>
 
-<?php phpinfo(); ?>
 
       <?php
       define('DB_HOST', 'localhost');
