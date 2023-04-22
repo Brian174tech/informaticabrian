@@ -58,7 +58,7 @@
     $filename = 'teller.csv';
     $string = 'opdracht';
     $file = fopen($filename, "w");
-    echo fwrite($file,"bob");
+    //echo fwrite($file,"bob");
     // fclose($file);
     readfile($filename);
     ?>
