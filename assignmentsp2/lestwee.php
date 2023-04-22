@@ -55,7 +55,7 @@
     // }
     // $teller = teller();
     // echo "$teller hallo";
-    $filename = 'teller.txt';
+    $filename = 'teller.csv';
     $string = 'opdracht';
     $file = fopen($filename, "w");
     echo fwrite($file,"bob");
