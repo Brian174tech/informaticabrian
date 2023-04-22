@@ -90,7 +90,7 @@
       fclose($handle);
       return sprintf("%06d", $teller);
     }
-    echo teller('koekjes');
+    teller();
     ?>
   </section>
 </main>
