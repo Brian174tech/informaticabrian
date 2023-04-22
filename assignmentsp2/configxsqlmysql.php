@@ -31,7 +31,7 @@ foreach ( $result as $record ){
 
     foreach ( $record  as $key => $value ) {
         echo "<li>$key => $value</li>";
-    }
-    echo '</ul>'
+    };
+    echo '</ul>';
 }
 ?>
