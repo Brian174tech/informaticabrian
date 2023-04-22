@@ -54,8 +54,8 @@
     // }
     // $teller = teller();
     // echo "$teller hallo";
-    $filename = "teller.txt";
-    $string = "opdracht";
+    $filename = 'teller.txt';
+    $string = 'opdracht';
     file_put_contents($filename, $string);
     readfile($filename);
     ?>
