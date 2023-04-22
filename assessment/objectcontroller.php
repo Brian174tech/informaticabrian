@@ -64,6 +64,4 @@ require_once 'objectmodel.php';
             $messageNumber = "Wrong input or object does not exist";
         }
         
-    }    
-
-?>
+    }
