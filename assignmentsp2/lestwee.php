@@ -41,11 +41,13 @@
       echo "<p> $dow<br>";
       echo "$date</p>"; 
 
+      function showTime() {
+        $date = strftime ( "%c", time());
+        $dow = strftime ("%A", time());
+        echo "{$dow} / {$date}<br>";
+      }
       setlocale(LC_TIME, 'nl_NL');
-      $date = date('d-m-Y H:i');
-      $dow = date ('l');
-      echo "<p> $dow<br>";
-      echo "$date</p>"; 
+      showTime();
       ?>
 
 
