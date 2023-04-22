@@ -36,6 +36,27 @@
     ?>
 
     <?php
+    function teller()
+    {
+      $filename = "teller.txt";
+      if (file_exists($filename)) {
+        $handle = fopen($filename, "rb+");
+        $teller = fread($handle, filesize($filename));
+        $teller++;
+      } else {
+        $handle = fopen($filename, "wb+");
+        $teller = 1;
+      }
+      rewind($handle);
+      fwrite($handle, $teller);
+      fclose($handle);
+      return sprintf("%06d", $teller);
+    }
+    $teller = teller();
+    echo "$teller hallo";
+    ?>
+
+    <?php
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'schoolopdracht');
     define('DB_USER', 'bri_sg');
@@ -73,26 +94,7 @@
     }
     ?>
 
-    <?php
-    function teller()
-    {
-      $filename = "teller.txt";
-      if (file_exists($filename)) {
-        $handle = fopen($filename, "rb+");
-        $teller = fread($handle, filesize($filename));
-        $teller++;
-      } else {
-        $handle = fopen($filename, "wb+");
-        $teller = 1;
-      }
-      rewind($handle);
-      fwrite($handle, $teller);
-      fclose($handle);
-      return sprintf("%06d", $teller);
-    }
-    $teller = teller();
-    echo "$teller hallo" ;
-    ?>
+
   </section>
 </main>
 <?php require_once '../default/footer.html'; ?>
