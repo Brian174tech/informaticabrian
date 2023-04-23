@@ -134,8 +134,10 @@
       <input type="submit">
       </form>
     </p>
-    <p>
+    <p style="border-width:3px; border-style:solid;">
       <form action="functionmam.php" method="post">
+      <img id="activitydiagram4" src="../images/activityminmaxavg.png" title="activity min max avg image" /><br>
+      Min max avg activity diagram <br>
         Voer een drietal hele nummers in tussen de 0 en 99: <br><input type="text" name="nummer1"><br>
         <input type="text" name="nummer2"><br>
         <input type="text" name="nummer3"><br>
