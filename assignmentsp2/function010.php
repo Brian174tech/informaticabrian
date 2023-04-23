@@ -6,8 +6,8 @@ if(is_numeric($_POST['nummer'])){
     if ($nummer > 1 && $nummer < 10){
         $opties = array("1"=>"Zeer Slecht","2"=>"Slecht","3"=>"Matig","4"=>"ruim onvoldoende","5"=>"onvoldoende","6"=>"voldoende","7"=>"ruim voldoende","8"=>"Goed", "9"=>"Zeer goed", "10"=>"uitmuntend");
         echo "<p>$opties[$nummer]</p>";
-        vardump($opties);
-        vardump($nummer);
+        echo($opties);
+        echo($nummer);
     } 
 } else{
     echo("<p>nummer is geen numeriek tussen 1 en 10</p>");
