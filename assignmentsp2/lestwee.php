@@ -118,7 +118,8 @@
       <img id="activitydiagram" src="../images/activity.png" title="activity switch image" /><br>
       Switch activity diagram <br>
     </p>
-    <p>
+    <p style="border-width:3px; border-style:solid;">
+    <img id="activitydiagram2" src="../images/activityarray.png" title="activity array image" /><br>
       <form action="function010.php" method="post">
         Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
         <input type="submit">
