@@ -8,7 +8,7 @@ if(is_numeric($_POST['nummer'])){
         echo $opties[$nummer];
     } 
 } else{
-    echo("nummer is geen numeriek tussen 1 en 10");
+    echo("<p>nummer is geen numeriek tussen 1 en 10</p>");
     echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
     exit();
 }
