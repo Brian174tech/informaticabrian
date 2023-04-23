@@ -120,7 +120,7 @@
     </p>
     <p>
       <form action="function010.php" method="post">
-        Voer een nummer in 1 t/m 10: <input type="text" name="nummer"><br>
+        Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
         <input type="submit">
         </p>
   </section>
