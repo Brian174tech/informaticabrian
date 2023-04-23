@@ -4,7 +4,7 @@ require_once '../default/header.php';
 if(is_numeric($_POST['nummer'])){
     $nummer2 = $_POST['nummer'];
     $nummer = (int)$nummer2;
-    $resultaat = strlen($nummer);
+    $resultaat = count_chars($nummer);
     echo "<p>De lengte van je nummer $nummer = $resultaat</p>";
     echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
 } else{
