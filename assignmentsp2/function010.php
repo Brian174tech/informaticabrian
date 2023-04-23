@@ -12,9 +12,11 @@ if(is_numeric($_POST['nummer'])){
 } if(is_numeric($_POST['nummercount'])){
     $nummer2 = $_POST['nummercount'];
     $nummer = (int)$nummer2;
-    $resultaat = strlen((string)$nummer);
-    echo "<p>De lengte van je nummer $nummer = $resultaat</p>";
-    echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
+    if ($nummer >= 0 && $nummer <= 999999){
+        $resultaat = strlen((string)$nummer);
+        echo "<p>De lengte van je nummer $nummer = $resultaat</p>";
+        echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
+    }
 } else{
     echo("<p>nummer is geen (geldig) numeriek</p>");
     echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
