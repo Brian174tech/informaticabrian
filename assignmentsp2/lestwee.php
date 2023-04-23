@@ -121,28 +121,28 @@
     <p style="border-width:3px; border-style:solid;">
       <img id="activitydiagram2" src="../images/activityarray.png" title="activity array image" /><br>
       Array activity diagram <br>
-      <form action="function010.php" method="post">
-        Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
-        <input type="submit">
-      </form>
+    <form action="function010.php" method="post">
+      Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
+      <input type="submit">
+    </form>
     </p><br>
     <p style="border-width:3px; border-style:solid;">
       <img id="activitydiagram3" src="../images/activitystringcount.png" title="activity string count image" /><br>
       Count string activity diagram <br>
-      <form action="functioncount.php" method="post">
-        Voer een heel nummer in tussen 0 en 999999: <input type="text" name="nummer"><br>
+    <form action="functioncount.php" method="post">
+      Voer een heel nummer in tussen 0 en 999999: <input type="text" name="nummer"><br>
       <input type="submit">
-      </form>
+    </form>
     </p>
     <p style="border-width:3px; border-style:solid;">
-      <form action="functionmam.php" method="post">
       <img id="activitydiagram4" src="../images/activityminmaxavg.png" title="activity min max avg image" /><br>
       Min max avg activity diagram <br>
-        Voer een drietal hele nummers in tussen de 0 en 99: <br><input type="text" name="nummer1"><br>
-        <input type="text" name="nummer2"><br>
-        <input type="text" name="nummer3"><br>
+    <form action="functionmam.php" method="post">
+      Voer een drietal hele nummers in tussen de 0 en 99: <br><input type="text" name="nummer1"><br>
+      <input type="text" name="nummer2"><br>
+      <input type="text" name="nummer3"><br>
       <input type="submit">
-      </form>
+    </form>
     </p>
   </section>
 </main>
