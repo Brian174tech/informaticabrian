@@ -9,8 +9,14 @@ if(is_numeric($_POST['nummer'])){
         echo "<p>De cijferwaarde van nummer $nummer = $opties[$nummer]</p>";
         echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
     } 
+} if(is_numeric($_POST['nummercount'])){
+    $nummer2 = $_POST['nummercount'];
+    $nummer = (int)$nummer2;
+    $resultaat = strlen((string)$nummer);
+    echo "<p>De lengte van je nummer $nummer = $resultaat</p>";
+    echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
 } else{
-    echo("<p>nummer is geen (geldig) numeriek tussen 1 en 10</p>");
+    echo("<p>nummer is geen (geldig) numeriek</p>");
     echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
     exit();
 }

@@ -124,8 +124,8 @@
       <input type="submit">
     </p><br>
     <p>
-      <form action="functioncount.php" method="post">
-        Voer een heel nummer in tussen 0 en 999999: <input type="text" name="nummer"><br>
+      <form action="function010.php" method="post">
+        Voer een heel nummer in tussen 0 en 999999: <input type="text" name="nummercount"><br>
       <input type="submit">
     </p>
   </section>
