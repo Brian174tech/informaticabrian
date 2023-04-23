@@ -8,6 +8,7 @@ if(is_numeric($_POST['nummer1']) || is_numeric($_POST['nummer2']) || is_numeric(
     $nummer2 = (int)$nummert;
     $nummert = $_POST['nummer3'];
     $nummer3 = (int)$nummert;
+    echo "<p> Dit zijn je ingevoerde nummers: $nummer1, $nummer2 en $nummer3 </p><br>";
     if ($nummer1 >= 0 && $nummer1 <= 99 || $nummer2 >= 0 && $nummer2 <= 99 || $nummer3 >= 0 && $nummer3 <= 99 ){
         $resultaat = min($nummer1,$nummer2,$nummer3);
         echo "<p>Dit nummer is het kleinst = $resultaat</p>";

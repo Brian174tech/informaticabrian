@@ -132,7 +132,7 @@
     </p>
     <p>
       <form action="functionmam.php" method="post">
-        Voer een 3tal hele nummer in tussen 0 en 99: <br><input type="text" name="nummer1"><br>
+        Voer een drietal hele nummers in tussen de 0 en 99: <br><input type="text" name="nummer1"><br>
         <input type="text" name="nummer2"><br>
         <input type="text" name="nummer3"><br>
       <input type="submit">
