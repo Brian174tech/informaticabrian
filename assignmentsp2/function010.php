@@ -1,4 +1,5 @@
 <?php
+require_once '../default/header.php';
 
 if(is_numeric($_POST['nummer'])){
     $nummer = $_POST;
