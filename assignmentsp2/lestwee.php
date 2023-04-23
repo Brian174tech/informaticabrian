@@ -34,7 +34,7 @@
     setlocale(LC_TIME, 'nl_NL');
     showTime();
     ?>
-
+    <br>
     <?php
     error_reporting(E_ALL);
     // function teller()
@@ -62,7 +62,7 @@
     // fclose($file);
     readfile($filename);
     ?>
-    <br>
+    <br><br>
     <?php
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'schoolopdracht');
