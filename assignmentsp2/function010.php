@@ -3,7 +3,7 @@ require_once '../default/header.php';
 
 if(is_numeric($_POST['nummer'])){
     $nummer = $_POST['nummer'];
-    if ($nummer >= 1 && $nummer <= 10){
+    if ((int)$nummer >= 1 && (int)$nummer <= 10){
         $opties = array("1"=>"Zeer Slecht","2"=>"Slecht","3"=>"Matig","4"=>"ruim onvoldoende","5"=>"onvoldoende","6"=>"voldoende","7"=>"ruim voldoende","8"=>"Goed", "9"=>"Zeer goed", "10"=>"uitmuntend");
         echo "<p>De cijferwaarde van nummer $nummer = $opties[$nummer]</p>";
         echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
