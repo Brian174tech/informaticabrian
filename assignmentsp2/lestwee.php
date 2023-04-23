@@ -119,10 +119,15 @@
       Switch activity diagram <br>
     </p>
     <p>
-      <form action="function010.php" method="post">
-        Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
-        <input type="submit">
-        </p>
+    <form action="function010.php" method="post">
+      Voer een heel nummer in tussen 1 t/m 10: <input type="text" name="nummer"><br>
+      <input type="submit">
+    </p><br>
+    <p>
+      <form action="functioncount.php" method="post">
+        Voer een heel nummer in tussen 0 en 999999: <input type="text" name="nummer"><br>
+      <input type="submit">
+    </p>
   </section>
 </main>
 <?php require_once '../default/footer.html'; ?>
