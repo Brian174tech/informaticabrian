@@ -9,7 +9,7 @@ if(is_numeric($_POST['nummer'])){
     } 
 } else{
     echo("nummer is geen numeriek tussen 1 en 10");
-    echo "<main class=\"contentmain\"> <p><a href=\"javascript:history.back()\"> Pagina terug!</a></p> </main>\n";
+    echo "<p><a href=\"javascript:history.back()\"> Pagina terug!</a></p>\n";
     exit();
 }
 ?>
