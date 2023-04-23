@@ -114,7 +114,7 @@
       SessionID = <?= session_id() ?> <br>
       Page visit counter: <?= $counter ?> .
     </p>
-    <p>
+    <p style="border-width:3px;">
       <img id="activitydiagram" src="../images/activity.png" title="activity switch image" /><br>
       Switch activity diagram
     </p>
