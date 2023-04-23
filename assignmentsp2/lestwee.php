@@ -111,7 +111,7 @@
     ?>
     <br>
     <p>
-      SessionID = <?=session_id() ?>
+      SessionID = <?=session_id() ?> <br>
       Page visit counter: <?=$counter ?> .
     </p>
   </section>
