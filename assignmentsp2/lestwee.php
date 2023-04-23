@@ -111,8 +111,12 @@
     ?>
     <br>
     <p>
-      SessionID = <?=session_id() ?> <br>
-      Page visit counter: <?=$counter ?> .
+      SessionID = <?= session_id() ?> <br>
+      Page visit counter: <?= $counter ?> .
+    </p>
+    <p>
+      <img id="activitydiagram" src="../images/activity.png" title="activity switch image" />
+      Switch activity diagram
     </p>
   </section>
 </main>
