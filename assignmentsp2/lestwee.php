@@ -62,7 +62,7 @@
     // fclose($file);
     readfile($filename);
     ?>
-<br>
+    <br>
     <?php
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'schoolopdracht');
@@ -99,10 +99,21 @@
       }
       echo '</ul>';
     }
-    
+
     ?>
-
-
+    <?php
+    session_start();
+    if (!isset($_SESSION['counter'])) {
+      $_SESSION['counter'] = 0;
+    }
+    $counter = $_SESSION['counter'] + 1;
+    $_SESSION['counter'] = $counter;
+    ?>
+    <br>
+    <p>
+      SessionID = <?=session_id() ?>
+      Page visit counter: <?=$counter ?> .
+    </p>
   </section>
 </main>
 <?php require_once '../default/footer.html'; ?>
