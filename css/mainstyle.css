@@ -9,6 +9,9 @@ body {
 }
 p {
   color: var(--black);
+  position: relative;
+  margin: auto;
+  font-size: 0.9em ;
 }
 pre {
   color: var(--black);
@@ -20,18 +23,21 @@ pre {
 }
 h3 {
   color: var(--black);
+  width:50%;
+  margin: auto;
 }
 h4 {
   color: var(--black);
   border-style: double;
   margin: 0;
   padding: 0;
+  
 }
 h5 {
   color: var(--black);
-  margin: 0;
-  padding: 0;
-  line-height: 0;
+  margin: auto;
+  width:50%;
+  margin: auto;
 }
 table {
   border-collapse: collapse;
@@ -62,16 +68,8 @@ table td {
   font-weight: 700;
   position: absolute;
 }
-.logomain img {
-  opacity: 0.75;
-  transition: rotate 2s ease-in-out;
-}
-.logomain:hover img {
-  rotate: -240deg;
-}
 #mainlogo {
-  height: 150px;
-  width: 150px;
+  height: 75px;
   margin: 24px auto;
 }
 /* Logo segment +++++++++++++++++++++++++++++ end */
@@ -131,7 +129,7 @@ table td {
 }
 /* navigation segment ++++++++++++++++++++++ end */
 .contentmain {
-  display: flex;
+
   max-width: 1200px;
   min-width: 380px;
   margin: 0;
@@ -201,20 +199,20 @@ table td {
   line-height: 1;
 }
 /* mediaquery segment ++++++++++++++++++++ begin */
-@media only screen and (max-width: 600px) {
-  #mainlogo {
-    width: 75px;
-    height: 75px;
-    margin: 12px auto;
-  }
-  #menuicon {
-    display: flex;
-  }
-}
+
 
 @media only screen and (min-width: 600px) {
   #menuitems.responsive {
     display: flex;
     width: 100%;
   }
+}
+
+footer{
+  font-size: 0.8em;
+  /* margin: auto;
+  width: 50%; */
+  color: black;
+  position: relative;
+  height: 50px;
 }

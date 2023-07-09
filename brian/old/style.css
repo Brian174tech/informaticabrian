@@ -1,0 +1,107 @@
+h1{
+    color: rgb(0, 0, 0);
+    background:#dbdbdb
+}
+h1 othercolour1{
+    color: rgb(255, 112, 112);
+}
+h1 othercolour2{
+    color: rgb(82, 170, 119);
+}
+h1 othercolour3{
+    color: rgb(255, 91, 233);
+}
+
+h2{
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+h3{
+    font-size: 35px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    background:#faa78d
+}
+h4{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+h5{
+    font-size: 180px;
+    text-align: center;
+    color: rgb(255, 50, 50);
+    margin: 0;
+}
+
+p{
+    font-style: bold;
+    color: rgb(0, 0, 0);
+}
+hr{
+    border-top: 1px solid red;
+}
+
+.container3part{
+    display: table;
+    }
+    .left{
+        width: 33%;
+        height: 100%;
+        float: left;
+    }
+    .middle{
+        width: 34%;
+        height: 100%;
+        float: left;
+    }
+    .right{
+        width: 33%;
+        height: 100%;
+        float: left;
+}
+
+.fixedlist{
+        position: fixed;
+        top: 0;
+        Width:100%;
+        background-color: #333;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.knop{
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.knopje1{
+    background-color: rgb(16, 141, 243); 
+    color: rgb(255, 255, 255); 
+    border: 4px solid #ff9100;
+}
+.knopje1:hover{
+    background-color: #ff2828;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border: 8px solid #ff6fff;
+    border-radius:10px;
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.658);
+}
+.knopje2{
+    background-color: white; 
+    color: black; 
+    border: 6px solid #008CBA;
+}
+.knopje2:hover{
+    background-color: #008CBA;
+    color: white;
+}
+

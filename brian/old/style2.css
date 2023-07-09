@@ -1,0 +1,12 @@
+#brianstyle 
+
+h1{
+    color: rgb(0, 0, 0);
+    background:#dbdbdb
+}
+
+p{
+    font-style: bold;
+    color: rgb(255, 113, 220);
+    font-family: "Comic Sans MS", "Comic Sans";
+}

@@ -1,0 +1,95 @@
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+}
+
+header {
+	background-color: red;
+	min-height: 150px;
+}
+
+footer {
+	background-color: blue;
+	min-height: 150px;
+}
+
+main {
+	min-height: 400px;
+	padding-top: 25px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul.menu {
+	list-style-type: none;
+	text-align: center;
+	margin-top: calc(75px - 21.5px/2);
+}
+
+ul.menu li{
+	display: inline;
+	color: #fff;
+}
+
+form {
+	width: 100%;
+}
+
+form label {
+	width: 30%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+form input[type=email], form input[type=text] {
+	width: 70%;
+	float: left;
+	padding: 5px;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+  }
